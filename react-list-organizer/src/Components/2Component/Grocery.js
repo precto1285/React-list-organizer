@@ -5,10 +5,10 @@ const Grocery = props => {
     <div>
       <h1> Grocery List:</h1>
       <ul>
-        <li>Fruit Item: {props.fruit}</li>
-        <li>Starch Item: {props.starch}</li>
-        <li>Meat Item: {props.meat}</li>
-        <li>Vegetable Item: {props.vegetable}</li>
+        <li><h3>Fruit Item:</h3> <p>{props.fruit}</p></li>
+        <li><h3>Starch Item:</h3> <p>{props.starch}</p></li>
+        <li><h3>Meat Item:</h3> <p>{props.meat}</p></li>
+        <li><h3>Vegetable Item:</h3> <p>{props.vegetable}</p></li>
       </ul>
     </div>
   )

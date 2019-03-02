@@ -2,7 +2,11 @@ import React from 'react';
 
 const ListMaker = () => {
   return (
-    <p>List Maker</p>
+    <div>
+      <h1>List Maker:</h1>
+      <input />
+      <button>Send</button>
+    </div>
   )
 }
 
