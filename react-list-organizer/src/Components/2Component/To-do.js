@@ -1,8 +1,16 @@
 import React from 'react';
 
-const ToDo = () => {
+const ToDo = props => {
   return (
-    <p>To Do</p>
+    <div>
+      <ul>
+        <li>{props.office}</li>
+        <li>{props.home}</li>
+        <li>{props.dog}</li>
+        <li>{props.friends}</li>
+        <li>{props.family}</li>
+      </ul>
+    </div>
   )
 }
 

@@ -1,8 +1,16 @@
 import React from 'react';
 
-const Grocery = () => {
+const Grocery = props => {
   return (
-    <p>Grocery</p>
+    <div>
+      <h1> Grocery List:</h1>
+      <ul>
+        <li>{props.fruit}</li>
+        <li>{props.starch}</li>
+        <li>{props.meat}</li>
+        <li>{props.vegetable}</li>
+      </ul>
+    </div>
   )
 }
 
