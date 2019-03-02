@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const ListMaker = () => {
-  return (
-    <div>
-      <h1>List Maker:</h1>
-      <input />
-      <button>Send</button>
-    </div>
-  )
+class ListMaker extends Component {
+  buttonHandler() {
+    console.log('Hello World');
+  }
+  render() {
+    return (
+      <div>
+        <h1>List Maker:</h1>
+        <input type="text" placeholder="enter list" id="listMesssage" />
+
+        <button onClick={this.buttonHandler}>Send</button>
+      </div>
+    )
+  }
 }
 
 export default ListMaker;
