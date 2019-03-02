@@ -17,7 +17,7 @@ class App extends Component {
       todo: [
         { office: ['file report', 'team meeting', 'client meeting', 'planning'] },
         { home: ['clean the carpet', 'take out the trash', 'wash the dishes'] },
-        { dog: ['morning walk', 'grooming', 'play time', 'afternoon walk', 'medicine'] },
+        { dog: ['morning walk', 'grooming', 'play time', 'visit the vet', 'medicine'] },
         { friends: ['dinner', 'bowling', 'yoga class', 'golf'] },
         { family: ['Nephews Birthday', 'Aunties Funeral', 'Daughters Wedding'] }
       ]
@@ -31,16 +31,16 @@ class App extends Component {
       <div className="App">
         <ListMaker />
         <Grocery
-          fruit="apple"
-          starch="bread"
-          meat="pork"
-          vegetable="spinach" />
+          fruit={this.state.grocery[0].fruit[0]}
+          starch={this.state.grocery[1].starch[0]}
+          meat={this.state.grocery[2].meat[0]}
+          vegetable={this.state.grocery[3].vegetable[0]} />
         <Todo
-          office="file reports"
-          home="clean carpet"
-          dog="take dog to vet"
-          friends="dinner with friends"
-          family="Nephew's Birthday"
+          office={this.state.todo[0].office[0]}
+          home={this.state.todo[1].home[0]}
+          dog={this.state.todo[2].dog[0]}
+          friends={this.state.todo[3].friends[0]}
+          family={this.state.todo[4].family[0]}
         />
       </div>
     );
